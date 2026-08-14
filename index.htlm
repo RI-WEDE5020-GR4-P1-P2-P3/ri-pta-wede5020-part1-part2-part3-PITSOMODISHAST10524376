@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Threads - Home</title>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>URBAN THREADS</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section>
+            <h2>Fresh Drops. Street Culture.</h2>
+            <p>Discover the latest streetwear collection at Urban Threads. Premium quality, authentic style.</p>
+            <a href="products.html">Shop Now</a>
+        </section>
+
+        <!-- Featured Products -->
+        <section>
+            <h2>Featured Products</h2>
+            <div>
+                <div>
+                    <img src="images/product1.jpg" alt="Graphic T-Shirt" width="200">
+                    <h3>Graphic T-Shirt</h3>
+                    <p>R250</p>
+                </div>
+                <div>
+                    <img src="images/product2.jpg" alt="Oversized Hoodie" width="200">
+                    <h3>Oversized Hoodie</h3>
+                    <p>R450</p>
+                </div>
+                <div>
+                    <img src="images/product3.jpg" alt="Snapback Cap" width="200">
+                    <h3>Snapback Cap</h3>
+                    <p>R180</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Teaser -->
+        <section>
+            <h2>About Urban Threads</h2>
+            <p>We're bringing authentic streetwear culture to South Africa. Quality, style, and urban vibes.</p>
+            <a href="about.html">Learn More</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Urban Threads. All rights reserved.</p>
+        <p>Follow us: Instagram | TikTok | Facebook</p>
+    </footer>
+</body>
+</html>
