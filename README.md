@@ -78,6 +78,21 @@ A professional, responsive website for Urban Threads, a Johannesburg-based stree
 - Tested responsiveness using Chrome DevTools
 - Added responsive testing screenshots to documentation
 
+- ## Changelog
+Part 2 – 18 September 2026
+- Created external css/style.css stylesheet
+- Linked stylesheet to all 5 HTML pages
+- Added Google Fonts (Montserrat + Open Sans) to all pages
+
+Part 3 – 03 November 2026
+- Implemented enquiry form validation with JavaScript
+- Added contact form email functionality
+- Integrated Google Maps iframe on contact.html
+- Added gallery lightbox for product images
+- Optimised meta descriptions and keywords for SEO
+- Deployed website on Netlify
+
+
 ### Part 1 Feedback Corrections – 18 September 2026
 - Reviewed Part 1 feedback and applied necessary corrections
 
