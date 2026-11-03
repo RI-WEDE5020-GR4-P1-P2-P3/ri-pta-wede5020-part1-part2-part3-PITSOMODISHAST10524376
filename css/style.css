@@ -349,3 +349,18 @@ footer p {
         padding: 1.5rem 1rem;
     }
 }
+
+.tablink {
+  background: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.tablink:hover { background: #555; }
+
+.tabcontent {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
