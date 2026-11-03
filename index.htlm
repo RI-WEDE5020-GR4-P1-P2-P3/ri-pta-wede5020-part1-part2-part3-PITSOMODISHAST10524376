@@ -86,3 +86,24 @@
   <h2>Contact Us</h2>
   <p>Contact form or info...</p>
 </div>
+
+<script>
+function openTab(evt, tabName) {
+  // Hide all tabcontent
+  const contents = document.getElementsByClassName("tabcontent");
+  for (let i = 0; i < contents.length; i++) {
+    contents[i].style.display = "none";
+  }
+
+  // Reset button styles
+  const links = document.getElementsByClassName("tablink");
+  for (let i = 0; i < links.length; i++) {
+    links[i].style.background = "#333";
+  }
+
+  // Show selected tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.style.background = "#555";
+}
+</script>
+
