@@ -64,3 +64,25 @@
     </footer>
 </body>
 </html>
+<!-- Tabs -->
+<div class="tabs">
+  <button class="tablink" onclick="openTab(event, 'services')">Services</button>
+  <button class="tablink" onclick="openTab(event, 'products')">Products</button>
+  <button class="tablink" onclick="openTab(event, 'contact')">Contact</button>
+</div>
+
+<!-- Tab Content -->
+<div id="services" class="tabcontent">
+  <h2>Our Services</h2>
+  <p>Details about services...</p>
+</div>
+
+<div id="products" class="tabcontent" style="display:none;">
+  <h2>Our Products</h2>
+  <p>Details about products...</p>
+</div>
+
+<div id="contact" class="tabcontent" style="display:none;">
+  <h2>Contact Us</h2>
+  <p>Contact form or info...</p>
+</div>
