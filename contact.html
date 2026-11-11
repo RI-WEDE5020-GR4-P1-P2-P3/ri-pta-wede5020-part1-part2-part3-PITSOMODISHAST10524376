@@ -1,52 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Threads - Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Contact Urban Threads – Get in Touch | Johannesburg Streetwear</title>
+  <meta name="description" content="Contact Urban Threads in Johannesburg. Send us a message, visit our Bree Street store, or find us on social media. We reply within 24 hours.">
+  <meta name="keywords" content="contact Urban Threads, streetwear store Johannesburg, Bree Street fashion, South African clothing brand contact">
+  <meta name="author" content="Urban Threads">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://urbanthreads.co.za/contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Urban Threads – Johannesburg">
+  <meta property="og:description" content="Get in touch with Urban Threads. Visit us at 123 Bree Street, Johannesburg, or send a message online.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://urbanthreads.co.za/contact.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Leaflet Map CSS (via cdnjs) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTLSeB68ARYJipY1SQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header and Navigation -->
-    <header>
-        <h1>URBAN THREADS</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="products.html">Products</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <h2>Contact Us</h2>
-        
-        <section>
-            <h3>Store Information</h3>
-            <p><strong>Address:</strong> 123 Bree Street, Johannesburg, 2001</p>
-            <p><strong>Phone:</strong> 011 234 5678</p>
-            <p><strong>Email:</strong> info@urbanthreads.co.za</p>
-            <p><strong>Business Hours:</strong> Mon-Fri 9am-6pm, Sat 10am-4pm, Sun Closed</p>
-        </section>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Urban Threads – Home">URBAN THREADS</a>
+      <button class="hamburger" id="hamburger-btn" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">☰</button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+        <a href="products.html" class="cart-icon" aria-label="Cart">
+          🛒 <span id="cart-count" aria-label="items in cart">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
 
-        <!-- Google Map Embed Placeholder -->
-        <section>
-            <h3>Find Us</h3>
-            <!-- You can embed Google Maps here in Part 2 or Part 3 -->
-            <p>[Google Map Embed Placeholder]</p>
-        </section>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
 
-        <section>
-            <h3>Follow Us</h3>
-            <p>Instagram | TikTok | Facebook | Twitter</p>
-        </section>
-    </main>
+    <!-- Page heading -->
+    <section class="animate-on-scroll">
+      <span class="section-badge">Reach Out</span>
+      <h1>Contact Us</h1>
+      <p>Have something to say? We'd love to hear from you. Fill in the form below and your message will be compiled into an email ready to send, or visit us in store.</p>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Urban Threads. All rights reserved.</p>
-        <p>Follow us: Instagram | TikTok | Facebook</p>
-    </footer>
+    <!-- Contact Info + Map Grid -->
+    <section class="animate-on-scroll" aria-labelledby="store-info-heading">
+      <h2 id="store-info-heading">Find Us</h2>
+      <div class="contact-grid">
+
+        <!-- Store Information -->
+        <div>
+          <div class="contact-info-item">
+            <span class="icon" aria-hidden="true">📍</span>
+            <div>
+              <strong>Address</strong>
+              <p>123 Bree Street, Johannesburg CBD, Gauteng, 2001</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon" aria-hidden="true">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+27112345678">011 234 5678</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon" aria-hidden="true">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:info@urbanthreads.co.za">info@urbanthreads.co.za</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon" aria-hidden="true">🕐</span>
+            <div>
+              <strong>Business Hours</strong>
+              <p>Monday – Friday: 09:00 – 18:00<br>
+                 Saturday: 10:00 – 16:00<br>
+                 Sunday: Closed</p>
+            </div>
+          </div>
+
+          <h3 style="margin-top:1.5rem;margin-bottom:0.75rem;">Follow Us</h3>
+          <div class="social-links" style="justify-content:flex-start;">
+            <a href="#" aria-label="Follow Urban Threads on Instagram">IG</a>
+            <a href="#" aria-label="Follow Urban Threads on TikTok">TT</a>
+            <a href="#" aria-label="Follow Urban Threads on Facebook">FB</a>
+            <a href="#" aria-label="Follow Urban Threads on Twitter">X</a>
+          </div>
+        </div>
+
+        <!-- Interactive Leaflet Map -->
+        <div>
+          <h3 style="margin-bottom:0.75rem;">Our Location</h3>
+          <div id="store-map" aria-label="Interactive map showing Urban Threads store location at 123 Bree Street Johannesburg">
+            <!-- Leaflet map rendered by JS -->
+          </div>
+          <p style="margin-top:0.5rem;font-size:0.85rem;color:var(--text-grey);">Map data &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Form with JS Validation & Mailto -->
+    <section class="animate-on-scroll" aria-labelledby="contact-form-heading">
+      <h2 id="contact-form-heading">Send Us a Message</h2>
+      <p>Fill in the form below. Once validated, your details will be compiled into an email and your email client will open so you can send it directly.</p>
+
+      <div class="form-wrap">
+        <form id="contact-form" novalidate aria-label="Contact form">
+
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="contact_name">Full Name <span aria-hidden="true" style="color:var(--error)">*</span></label>
+            <input type="text" id="contact_name" name="contact_name"
+              autocomplete="name"
+              placeholder="e.g. Nomsa Dlamini"
+              minlength="2" maxlength="60"
+              required aria-required="true"
+              aria-describedby="contact_name-hint">
+            <span id="contact_name-hint" class="form-hint">2–60 characters.</span>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="contact_email">Email Address <span aria-hidden="true" style="color:var(--error)">*</span></label>
+            <input type="email" id="contact_email" name="contact_email"
+              autocomplete="email"
+              placeholder="e.g. nomsa@email.com"
+              required aria-required="true">
+          </div>
+
+          <!-- Phone (optional) -->
+          <div class="form-group">
+            <label for="contact_phone">Phone Number <span style="color:#888;font-weight:400;">(optional)</span></label>
+            <input type="tel" id="contact_phone" name="contact_phone"
+              autocomplete="tel"
+              placeholder="e.g. 0712345678"
+              pattern="^(\+27|0)[6-8][0-9]{8}$"
+              aria-describedby="contact_phone-hint">
+            <span id="contact_phone-hint" class="form-hint">Format: 0821234567 or +27821234567</span>
+          </div>
+
+          <!-- Message Type -->
+          <div class="form-group">
+            <label for="contact_type">Message Type <span aria-hidden="true" style="color:var(--error)">*</span></label>
+            <select id="contact_type" name="contact_type" required aria-required="true">
+              <option value="">— Select message type —</option>
+              <option value="General Enquiry">General Enquiry</option>
+              <option value="Order Follow-Up">Order Follow-Up</option>
+              <option value="Returns and Exchanges">Returns and Exchanges</option>
+              <option value="Wholesale Enquiry">Wholesale Enquiry</option>
+              <option value="Collaboration">Collaboration / Partnership</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="contact_message">Your Message <span aria-hidden="true" style="color:var(--error)">*</span></label>
+            <textarea id="contact_message" name="contact_message"
+              rows="6"
+              minlength="10" maxlength="1000"
+              placeholder="Type your message here…"
+              required aria-required="true"
+              aria-describedby="char-counter"></textarea>
+            <span id="char-counter" class="char-counter" aria-live="polite">0/1000 characters</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">
+            Compile &amp; Send Email
+          </button>
+          <p style="margin-top:0.75rem;font-size:0.82rem;color:#888;text-align:center;">
+            Clicking "Compile &amp; Send Email" will open your default email client with this message pre-filled, addressed to <strong>info@urbanthreads.co.za</strong>.
+          </p>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Urban Threads</h4>
+        <p>Authentic streetwear culture, born in Johannesburg.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>123 Bree Street, Johannesburg, 2001</p>
+        <p>011 234 5678</p>
+        <p>info@urbanthreads.co.za</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="TikTok">TT</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter / X">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span class="current-year">2026</span> Urban Threads. All rights reserved.</p>
+      <p>Designed &amp; developed for WEDE5020</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Leaflet JS (via cdnjs) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>

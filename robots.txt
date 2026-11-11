@@ -1,0 +1,13 @@
+# robots.txt - Urban Threads
+# Instructs search engine crawlers which pages to index
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private directories (if applicable)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /css/screenshot/
+
+# Sitemap location
+Sitemap: https://urbanthreads.co.za/sitemap.xml

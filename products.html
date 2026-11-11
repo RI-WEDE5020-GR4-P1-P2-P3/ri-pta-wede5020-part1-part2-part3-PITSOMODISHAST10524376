@@ -1,80 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Threads - Products</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Products – Urban Threads | Streetwear South Africa</title>
+  <meta name="description" content="Shop the full Urban Threads collection. Graphic tees, oversized hoodies, snapback caps, crossbody bags and more. Authentic streetwear delivered across South Africa.">
+  <meta name="keywords" content="buy streetwear South Africa, graphic tees Johannesburg, hoodies online SA, Urban Threads shop, urban fashion products">
+  <meta name="author" content="Urban Threads">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://urbanthreads.co.za/products.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shop Urban Threads – Streetwear Products">
+  <meta property="og:description" content="Browse the full Urban Threads collection. T-shirts, hoodies, caps and accessories.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://urbanthreads.co.za/products.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header and Navigation -->
-    <header>
-        <h1>URBAN THREADS</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="products.html">Products</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <h2>Our Collection</h2>
-        
-        <section>
-            <h3>T-Shirts</h3>
-            <div>
-                <img src="images/product1.jpg" alt="Graphic Tee" width="200">
-                <h4>Graphic T-Shirt</h4>
-                <p>Premium cotton graphic tee with urban print.</p>
-                <p>R250</p>
-            </div>
-            <div>
-                <img src="images/product4.jpg" alt="Logo Tee" width="200">
-                <h4>Logo T-Shirt</h4>
-                <p>Classic Urban Threads logo tee.</p>
-                <p>R220</p>
-            </div>
-        </section>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Urban Threads – Home">URBAN THREADS</a>
+      <button class="hamburger" id="hamburger-btn" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">☰</button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+        <a href="products.html" class="cart-icon" aria-label="Cart">
+          🛒 <span id="cart-count" aria-label="items in cart">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
 
-        <section>
-            <h3>Hoodies & Sweatshirts</h3>
-            <div>
-                <img src="images/product2.jpg" alt="Oversized Hoodie" width="200">
-                <h4>Oversized Hoodie</h4>
-                <p>Cozy oversized hoodie with bold embroidery.</p>
-                <p>R450</p>
-            </div>
-            <div>
-                <img src="images/product5.jpg" alt="Zip Hoodie" width="200">
-                <h4>Zip Hoodie</h4>
-                <p>Full-zip hoodie with urban graphics.</p>
-                <p>R480</p>
-            </div>
-        </section>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
 
-        <section>
-            <h3>Accessories</h3>
-            <div>
-                <img src="images/product3.jpg" alt="Snapback Cap" width="200">
-                <h4>Snapback Cap</h4>
-                <p>Classic snapback with embroidered logo.</p>
-                <p>R180</p>
-            </div>
-            <div>
-                <img src="images/product6.jpg" alt="Crossbody Bag" width="200">
-                <h4>Crossbody Bag</h4>
-                <p>Stylish streetwear crossbody bag.</p>
-                <p>R320</p>
-            </div>
-        </section>
-    </main>
+    <!-- Page Heading -->
+    <section class="animate-on-scroll">
+      <span class="section-badge">2026 Collection</span>
+      <h1>Our Collection</h1>
+      <p>Premium streetwear made for South African streets. Click any image to view it full screen, or use the search to find exactly what you need.</p>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Urban Threads. All rights reserved.</p>
-        <p>Follow us: Instagram | TikTok | Facebook</p>
-    </footer>
+    <!-- Search, Filter & Sort Toolbar -->
+    <section aria-label="Search and filter products">
+      <div class="products-toolbar" role="search">
+        <label for="product-search" class="sr-only">Search products</label>
+        <input type="search" id="product-search" placeholder="🔍  Search products…" aria-label="Search products">
+
+        <label for="category-filter" class="sr-only">Filter by category</label>
+        <select id="category-filter" aria-label="Filter by category">
+          <option value="all">All Categories</option>
+          <option value="tshirts">T-Shirts</option>
+          <option value="hoodies">Hoodies</option>
+          <option value="accessories">Accessories</option>
+        </select>
+
+        <label for="sort-filter" class="sr-only">Sort products</label>
+        <select id="sort-filter" aria-label="Sort products">
+          <option value="default">Sort By</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+          <option value="name-asc">Name: A → Z</option>
+        </select>
+
+        <span id="product-count" aria-live="polite" aria-atomic="true"></span>
+      </div>
+
+      <!-- Products rendered dynamically by JS -->
+      <div id="product-grid" aria-label="Product listings"></div>
+    </section>
+
+    <!-- Gallery Section with Lightbox -->
+    <section class="animate-on-scroll" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Product Gallery</h2>
+      <p>Browse our full range — click any image for a closer look.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/product1.jpg" alt="Graphic T-Shirt" loading="lazy" data-caption="Graphic T-Shirt – R250"></div>
+        <div class="gallery-item"><img src="images/product2.jpg" alt="Oversized Hoodie" loading="lazy" data-caption="Oversized Hoodie – R450"></div>
+        <div class="gallery-item"><img src="images/product3.jpg" alt="Snapback Cap" loading="lazy" data-caption="Snapback Cap – R180"></div>
+        <div class="gallery-item"><img src="images/product4.jpg" alt="Logo T-Shirt" loading="lazy" data-caption="Logo T-Shirt – R220"></div>
+        <div class="gallery-item"><img src="images/product5.jpg" alt="Zip Hoodie" loading="lazy" data-caption="Zip Hoodie – R480"></div>
+        <div class="gallery-item"><img src="images/product6.jpg" alt="Crossbody Bag" loading="lazy" data-caption="Crossbody Bag – R320"></div>
+      </div>
+    </section>
+
+    <!-- Delivery & Returns Info via Tabs -->
+    <section class="animate-on-scroll" aria-labelledby="info-tabs-heading">
+      <h2 id="info-tabs-heading">Delivery &amp; Returns</h2>
+
+      <div role="tablist" aria-label="Delivery and returns information">
+        <button role="tab" id="tab-del"     aria-controls="panel-del"     tabindex="0">Delivery</button>
+        <button role="tab" id="tab-returns" aria-controls="panel-returns" tabindex="-1">Returns</button>
+        <button role="tab" id="tab-sizes"   aria-controls="panel-sizes"   tabindex="-1">Size Guide</button>
+      </div>
+
+      <div role="tabpanel" id="panel-del" aria-labelledby="tab-del">
+        <ul>
+          <li><strong>Standard Delivery:</strong> 3–5 business days – FREE on orders over R800, otherwise R80.</li>
+          <li><strong>Express Delivery:</strong> 1–2 business days – R150.</li>
+          <li><strong>Same-day Collection:</strong> Available from our Bree Street store (Joburg).</li>
+          <li>Orders placed before 12pm are dispatched the same day (weekdays).</li>
+          <li>Tracking details sent via email and SMS upon dispatch.</li>
+        </ul>
+      </div>
+
+      <div role="tabpanel" id="panel-returns" aria-labelledby="tab-returns" hidden>
+        <ul>
+          <li>30-day return policy on all unworn, unwashed items.</li>
+          <li>Items must have original tags attached and be in original packaging.</li>
+          <li>Exchange for a different size is free of charge.</li>
+          <li>Refunds processed within 5–7 business days to original payment method.</li>
+          <li>Sale and customised items are non-refundable.</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline btn-sm">Start a Return</a>
+      </div>
+
+      <div role="tabpanel" id="panel-sizes" aria-labelledby="tab-sizes" hidden>
+        <table style="width:100%;border-collapse:collapse;color:var(--text-grey);font-size:0.9rem;">
+          <thead>
+            <tr style="color:var(--gold);border-bottom:2px solid var(--gold);">
+              <th style="padding:0.5rem;text-align:left;">Size</th>
+              <th style="padding:0.5rem;">Chest (cm)</th>
+              <th style="padding:0.5rem;">Waist (cm)</th>
+              <th style="padding:0.5rem;">Length (cm)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:0.5rem;">XS</td><td style="padding:0.5rem;text-align:center;">82–86</td><td style="padding:0.5rem;text-align:center;">68–72</td><td style="padding:0.5rem;text-align:center;">68</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:0.5rem;">S</td><td style="padding:0.5rem;text-align:center;">88–92</td><td style="padding:0.5rem;text-align:center;">74–78</td><td style="padding:0.5rem;text-align:center;">70</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:0.5rem;">M</td><td style="padding:0.5rem;text-align:center;">96–100</td><td style="padding:0.5rem;text-align:center;">80–84</td><td style="padding:0.5rem;text-align:center;">72</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:0.5rem;">L</td><td style="padding:0.5rem;text-align:center;">104–108</td><td style="padding:0.5rem;text-align:center;">86–90</td><td style="padding:0.5rem;text-align:center;">74</td></tr>
+            <tr style="border-bottom:1px solid #333;"><td style="padding:0.5rem;">XL</td><td style="padding:0.5rem;text-align:center;">112–116</td><td style="padding:0.5rem;text-align:center;">92–96</td><td style="padding:0.5rem;text-align:center;">76</td></tr>
+            <tr><td style="padding:0.5rem;">2XL</td><td style="padding:0.5rem;text-align:center;">120–124</td><td style="padding:0.5rem;text-align:center;">100–104</td><td style="padding:0.5rem;text-align:center;">78</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Urban Threads</h4>
+        <p>Authentic streetwear culture, born in Johannesburg.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>123 Bree Street, Johannesburg, 2001</p>
+        <p>011 234 5678</p>
+        <p>info@urbanthreads.co.za</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="TikTok">TT</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter / X">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span class="current-year">2026</span> Urban Threads. All rights reserved.</p>
+      <p>Designed &amp; developed for WEDE5020</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>

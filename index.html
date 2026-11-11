@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Urban Threads – Premium Streetwear South Africa | Shop Now</title>
+  <meta name="description" content="Urban Threads brings authentic streetwear culture to South Africa. Shop premium graphic tees, hoodies, caps and accessories. Fresh drops. Street culture.">
+  <meta name="keywords" content="streetwear South Africa, urban fashion, graphic tees, hoodies, Johannesburg fashion, street culture clothing">
+  <meta name="author" content="Urban Threads">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://urbanthreads.co.za/index.html">
+
+  <!-- Open Graph (Social Media) -->
+  <meta property="og:title" content="Urban Threads – Premium Streetwear South Africa">
+  <meta property="og:description" content="Authentic streetwear culture. Premium quality, South African style. Shop the latest collection.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://urbanthreads.co.za/">
+  <meta property="og:image" content="https://urbanthreads.co.za/images/product1.jpg">
+  <meta property="og:site_name" content="Urban Threads">
+  <meta property="og:locale" content="en_ZA">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Urban Threads – Premium Streetwear South Africa">
+  <meta name="twitter:description" content="Authentic streetwear culture. Shop the latest collection.">
+  <meta name="twitter:image" content="https://urbanthreads.co.za/images/product1.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Urban Threads – Home">URBAN THREADS</a>
+      <button class="hamburger" id="hamburger-btn" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">☰</button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+        <a href="products.html" class="cart-icon" aria-label="Cart">
+          🛒 <span id="cart-count" aria-label="items in cart">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero animate-on-scroll" aria-label="Welcome banner">
+      <span class="section-badge">New Collection 2026</span>
+      <h1>Fresh Drops. Street Culture.</h1>
+      <p>Discover the latest streetwear collection at Urban Threads. Premium quality, authentic South African style — born in Johannesburg.</p>
+      <a href="products.html" class="btn btn-primary">Shop Now</a>
+      <a href="about.html" class="btn btn-outline">Our Story</a>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats-strip animate-on-scroll" aria-label="Brand stats">
+      <div class="stat-item"><div class="stat-number">500+</div><div class="stat-label">Products</div></div>
+      <div class="stat-item"><div class="stat-number">10k+</div><div class="stat-label">Customers</div></div>
+      <div class="stat-item"><div class="stat-number">5★</div><div class="stat-label">Avg Rating</div></div>
+      <div class="stat-item"><div class="stat-number">3–5</div><div class="stat-label">Day Delivery</div></div>
+    </section>
+
+    <!-- Featured Products (dynamically loaded) -->
+    <section aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured Products</h2>
+      <p>Our best-selling streetwear pieces — click any image to see it up close.</p>
+
+      <!-- Search & Filter toolbar (also used as a showcase on homepage) -->
+      <div class="products-toolbar" role="search" aria-label="Search and filter products">
+        <label for="product-search" class="sr-only">Search products</label>
+        <input type="search" id="product-search" placeholder="🔍  Search products…" aria-label="Search products">
+        <label for="category-filter" class="sr-only">Filter by category</label>
+        <select id="category-filter" aria-label="Filter by category">
+          <option value="all">All Categories</option>
+          <option value="tshirts">T-Shirts</option>
+          <option value="hoodies">Hoodies</option>
+          <option value="accessories">Accessories</option>
+        </select>
+        <label for="sort-filter" class="sr-only">Sort products</label>
+        <select id="sort-filter" aria-label="Sort products">
+          <option value="default">Sort By</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+          <option value="name-asc">Name: A → Z</option>
+        </select>
+        <span id="product-count" aria-live="polite" aria-atomic="true"></span>
+      </div>
+
+      <!-- JS renders products into this grid -->
+      <div id="product-grid" aria-label="Product listings"></div>
+    </section>
+
+    <!-- About Teaser with Tabs -->
+    <section aria-labelledby="about-teaser-heading">
+      <h2 id="about-teaser-heading">Why Urban Threads?</h2>
+
+      <div role="tablist" aria-label="About tabs">
+        <button role="tab" id="tab-mission" aria-controls="panel-mission" tabindex="0">Our Mission</button>
+        <button role="tab" id="tab-values"  aria-controls="panel-values"  tabindex="-1">Our Values</button>
+        <button role="tab" id="tab-delivery" aria-controls="panel-delivery" tabindex="-1">Delivery</button>
+      </div>
+
+      <div role="tabpanel" id="panel-mission" aria-labelledby="tab-mission">
+        <p>To provide premium streetwear that reflects urban culture while empowering individuals to express their unique style. Urban Threads was born in Johannesburg with a simple mission: bring authentic, high-quality streetwear to South Africa.</p>
+        <a href="about.html" class="btn btn-outline btn-sm">Read Our Story</a>
+      </div>
+
+      <div role="tabpanel" id="panel-values" aria-labelledby="tab-values" hidden>
+        <ul class="values-list">
+          <li>Quality craftsmanship in every stitch</li>
+          <li>Authentic street culture at the core</li>
+          <li>Community and connection matter</li>
+          <li>Sustainability and ethical sourcing</li>
+        </ul>
+      </div>
+
+      <div role="tabpanel" id="panel-delivery" aria-labelledby="tab-delivery" hidden>
+        <p>We deliver anywhere in South Africa within 3–5 business days via our courier partners. Free delivery on orders over R800. Same-day collection available from our Johannesburg store.</p>
+        <a href="enquiry.html" class="btn btn-outline btn-sm">Ask About Delivery</a>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <div class="accordion" id="faq-accordion">
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" id="faq1-trigger" aria-controls="faq1-panel">What sizes do you stock?</button>
+          <div class="accordion-panel" id="faq1-panel" role="region" aria-labelledby="faq1-trigger">
+            <p>We stock sizes XS through to 3XL across all our clothing ranges. Size guides are available on each product page. If you are unsure, please use our enquiry form and we will help you find the right fit.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" id="faq2-trigger" aria-controls="faq2-panel">How long does delivery take?</button>
+          <div class="accordion-panel" id="faq2-panel" role="region" aria-labelledby="faq2-trigger">
+            <p>Standard delivery across South Africa takes 3–5 business days. Express delivery (1–2 days) is available at checkout for an additional fee. Orders placed before 12pm are dispatched the same day.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" id="faq3-trigger" aria-controls="faq3-panel">What is your return policy?</button>
+          <div class="accordion-panel" id="faq3-panel" role="region" aria-labelledby="faq3-trigger">
+            <p>We offer a 30-day return policy on all unworn, unwashed items with the original tags attached. Items must be returned in their original packaging. Customised or sale items are non-refundable.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" id="faq4-trigger" aria-controls="faq4-panel">Do you offer wholesale or custom orders?</button>
+          <div class="accordion-panel" id="faq4-panel" role="region" aria-labelledby="faq4-trigger">
+            <p>Yes! We offer wholesale pricing for orders of 20+ items and custom embroidery/printing for events, schools, and businesses. Use our enquiry form or email us at info@urbanthreads.co.za for a quote.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Gallery with Lightbox -->
+    <section aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Gallery</h2>
+      <p>Click any image to view it in full screen.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/product1.jpg" alt="Graphic T-Shirt – Urban Threads" loading="lazy" data-caption="Graphic T-Shirt – R250"></div>
+        <div class="gallery-item"><img src="images/product2.jpg" alt="Oversized Hoodie – Urban Threads" loading="lazy" data-caption="Oversized Hoodie – R450"></div>
+        <div class="gallery-item"><img src="images/product3.jpg" alt="Snapback Cap – Urban Threads" loading="lazy" data-caption="Snapback Cap – R180"></div>
+        <div class="gallery-item"><img src="images/product4.jpg" alt="Logo T-Shirt – Urban Threads" loading="lazy" data-caption="Logo T-Shirt – R220"></div>
+        <div class="gallery-item"><img src="images/product5.jpg" alt="Zip Hoodie – Urban Threads" loading="lazy" data-caption="Zip Hoodie – R480"></div>
+        <div class="gallery-item"><img src="images/product6.jpg" alt="Crossbody Bag – Urban Threads" loading="lazy" data-caption="Crossbody Bag – R320"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Urban Threads</h4>
+        <p>Authentic streetwear culture, born in Johannesburg. Premium quality, real style.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>123 Bree Street, Johannesburg, 2001</p>
+        <p>011 234 5678</p>
+        <p>info@urbanthreads.co.za</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="TikTok">TT</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter / X">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span class="current-year">2026</span> Urban Threads. All rights reserved.</p>
+      <p>Designed &amp; developed for WEDE5020</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
